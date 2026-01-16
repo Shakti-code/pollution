@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+header {
+    background: #2c7be5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.controls {
+    text-align: center;
+    margin: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.good { background: #c8e6c9; }
+.moderate { background: #fff9c4; }
+.poor { background: #ffcdd2; }
+
+.chart-section {
+    width: 90%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    background: #ddd;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pollution Monitoring Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>🌍 Pollution Monitoring Dashboard</h1>
+    <p>Frontend-Based Environmental Monitoring System</p>
+</header>
+
+<section class="controls">
+    <label>Select City:</label>
+    <select id="citySelect" onchange="updateData()">
+        <option value="bhubaneswar">Bhubaneswar</option>
+        <option value="delhi">Delhi</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="kolkata">Kolkata</option>
+    </select>
+</section>
+
+<section class="cards">
+    <div class="card good" id="aqiCard">
+        <h3>AQI</h3>
+        <p id="aqiValue">50</p>
+    </div>
+    <div class="card">
+        <h3>PM2.5</h3>
+        <p id="pm25">30 µg/m³</p>
+    </div>
+    <div class="card">
+        <h3>PM10</h3>
+        <p id="pm10">60 µg/m³</p>
+    </div>
+    <div class="card">
+        <h3>CO₂</h3>
+        <p id="co2">400 ppm</p>
+    </div>
+</section>
+
+<section class="chart-section">
+    <canvas id="pollutionChart"></canvas>
+</section>
+
+<footer>
+    <p>© 2026 Pollution Monitoring Dashboard | College Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
